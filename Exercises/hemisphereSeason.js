@@ -1,18 +1,26 @@
 /*
-Write a function that returns the least common multiple (LCM) of two integers.
+In this challenge, you are given a date and you have to determine the correspondent season in a certain hemisphere of Earth.
+
+You have to use the ranges given by the meteorological seasons definition, accordingly to the following table:
+
+Start	End	North Hemisphere	South Hemisphere
+March, 1	May, 31	Spring	Autumn
+June, 1	August, 31	Summer	Winter
+September, 1	November, 30	Autumn	Spring
+December, 1	February, 28***	Winter	Summer
+Given two strings hemisphere (can be "N" for the North hemisphere or "S" for the South hemisphere) and date (name and day of the month), implement a function that returns a string with the season name, accordingly to the above table.
 
 Examples
-lcm(9, 18) ➞ 18
+hemisphereSeason("N", "June, 30") ➞ "Summer"
 
-lcm(8, 5) ➞ 40
+hemisphereSeason("N", "March, 1") ➞ "Spring"
 
-lcm(17, 11) ➞ 187
+hemisphereSeason("S", "September, 22") ➞ "Spring"
 Notes
-Both values will be positive.
-The LCM is the smallest integer that divides both numbers such that the remainder is zero.
+During leap years the end date of Winter in the northern hemisphere is the 29th day of February (last day of Summer in the southern hemisphere). In this challenge, years are not used, so the last day of February will always be the 28th.
 */
 
-function hemisphereSeason( /*args*/ ) {
+function hemisphereSeason(/*args*/) {
   //your code
 }
 
